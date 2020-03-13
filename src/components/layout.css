@@ -2,8 +2,8 @@
 
 :root {
   --primaryColor: #3fd0d4;
-  --mainWhite: #f1f1f1;
-  --offWhite: #f7f7f7;
+  --mainWhite: #fff;
+  --offWhite: #f1f1f1;
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
@@ -21,7 +21,7 @@
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Helvetica", sans-serif;
   color: var(--mainBlack);
   background: var(--mainWhite);
   line-height: 1.4;
