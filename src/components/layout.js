@@ -3,6 +3,8 @@ import styled from "styled-components"
 
 import Header from "./Header"
 import Footer from "./Footer"
+import TopSection from "../components/TopSection"
+
 // import NavBar from "./NavBar"
 
 import "./layout.css"
@@ -19,11 +21,14 @@ const Wrapper = styled.div`
 
 const Layout = ({ children }) => {
   return (
-    <Wrapper>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </Wrapper>
+    <div>
+      <TopSection />
+      <Wrapper>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </Wrapper>
+    </div>
   )
 }
 
