@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import styled from "styled-components"
 import { IoIosArrowDown } from "react-icons/io"
+import VideoCards from "../components/VideoCards"
 // import Img from "gatsby-image"
 
 const HomeSection = styled.div`
@@ -70,7 +71,7 @@ const IndexPage = ({ data }) => (
     </HomeSection>
     <Layout>
       <SEO title="Home" />
-      <p>Video Gallery</p>
+      <VideoCards />
     </Layout>
   </div>
 )
@@ -81,6 +82,8 @@ export const query = graphql`
       title
       videoCards {
         title
+        slug
+        id
       }
     }
     akiyaImage: contentfulHomeImage {

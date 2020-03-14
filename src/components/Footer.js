@@ -6,7 +6,7 @@ const FooterContent = styled.footer`
   padding: 0.5rem 0;
   text-align: left;
   font-size: small;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: darkgrey;
 `
 
