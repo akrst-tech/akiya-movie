@@ -53,13 +53,19 @@ const VideoCards = () => {
   const videosNum = videos.length
 
   return (
+    // <VideoCardsContainer>
+    //   {videos.map((video, index) => (
+    //     <div key={index}>
+    //       {video.__typename === "ContentfulVideo" && (
+    //         <VideoCard key={video.id} video={video} />
+    //       )}
+    //     </div>
+    //   ))}
+    //   {videosNum % 2 === 0 ? null : <div />}
+    // </VideoCardsContainer>
     <VideoCardsContainer>
       {videos.map((video, index) => (
-        <div key={index}>
-          {video.__typename === "ContentfulVideo" && (
-            <VideoCard key={video.id} video={video} />
-          )}
-        </div>
+        <VideoCard key={video.id} video={video} />
       ))}
       {videosNum % 2 === 0 ? null : <div />}
     </VideoCardsContainer>

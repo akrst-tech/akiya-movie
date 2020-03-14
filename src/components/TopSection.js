@@ -26,7 +26,8 @@ const HomeTitle = styled.h1`
   font-size: 1rem;
   letter-spacing: 10px;
   margin-top: 15vh;
-  /* margin-bottom: -30px; */
+  /* margin-top: auto; */
+  margin-bottom: -50px;
   z-index: 10;
   @media screen and (min-width: 700px) {
     /* top: 20%; */
@@ -56,11 +57,11 @@ const AkiyaPortrait = styled.img`
   max-width: 500px;
   /* position: absolute;
   top: 50%;
-  left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
+  left: 50%; */
+  /* right: 50%; */
+  /* transform: translateX(-50%);
   transform: translateY(-50%); */
-  margin: 0 auto;
+  margin: auto;
 `
 
 const getPortrait = graphql`
