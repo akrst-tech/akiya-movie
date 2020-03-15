@@ -31,14 +31,14 @@ const IframeContainer = styled.div`
   }
 `
 
-const VideoPageTemplate = ({ data }) => {
+const VideoPageTemplate = ({ data, location }) => {
   const {
     title,
     embedCode: { embedCode },
   } = data.video
 
   return (
-    <Layout>
+    <Layout location={location}>
       <Wrapper>
         <h3 className="title">{title}</h3>
         <IframeContainer dangerouslySetInnerHTML={{ __html: embedCode }} />

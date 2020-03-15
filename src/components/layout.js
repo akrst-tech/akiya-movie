@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 import MobileMenu from "./MobileMenu"
 import Footer from "./Footer"
@@ -26,27 +25,6 @@ const BottomSection = styled.div`
   flex-direction: row;
 `
 
-const DesktopMenuSection = styled.div`
-  width: 0%;
-  display: none;
-  @media screen and (min-width: 700px) {
-    display: block;
-    width: 20%;
-  }
-  ul {
-    margin: 50px 0;
-  }
-  li {
-    margin: 10px 0;
-    list-style: none;
-    font-size: 0.8rem;
-    letter-spacing: 1.5px;
-    :hover {
-      opacity: 60%;
-    }
-  }
-`
-
 const VideoSection = styled.div`
   width: 100%;
   @media screen and (min-width: 700px) {
@@ -56,11 +34,16 @@ const VideoSection = styled.div`
 
 const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  console.log(rootPath)
+  let topSection
 
+  if (location.pathname === rootPath) {
+    topSection = <TopSection />
+  } else {
+    topSection = null
+  }
   return (
     <div>
-      <TopSection />
+      <div>{topSection}</div>
       <MobileMenu />
       <Wrapper>
         <BottomSection>
@@ -74,3 +57,15 @@ const Layout = ({ location, children }) => {
 }
 
 export default Layout
+
+// <div>
+//   <TopSection />
+//   <MobileMenu />
+//   <Wrapper>
+//     <BottomSection>
+//       <DesktopMenu />
+//       <VideoSection>{children}</VideoSection>
+//     </BottomSection>
+//     <Footer />
+//   </Wrapper>
+// </div>
