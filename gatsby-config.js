@@ -1,8 +1,12 @@
-const dotenv = require("dotenv")
+// const dotenv = require("dotenv")
 
-if (process.env.NODE_ENV !== "production") {
-  dotenv.config()
-}
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
+// if (process.env.NODE_ENV !== "production") {
+//   dotenv.config()
+// }
 
 module.exports = {
   siteMetadata: {
@@ -11,10 +15,10 @@ module.exports = {
       name: `Akiya Tanaka`,
       summary: `makes awesome videos.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
+    description: `Akiya's portfolio website`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: ``,
     },
   },
   plugins: [
