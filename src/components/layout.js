@@ -3,8 +3,8 @@ import styled from "styled-components"
 
 import MobileMenu from "./MobileMenu"
 import Footer from "./Footer"
-import TopSection from "../components/TopSection"
-import DesktopMenu from "../components/DesktopMenu"
+import TopSection from "./TopSection"
+import DesktopMenu from "./DesktopMenu"
 
 // import NavBar from "./NavBar"
 

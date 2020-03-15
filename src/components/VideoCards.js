@@ -32,7 +32,7 @@ const getVideos = graphql`
             id
             title
             fluid(maxWidth: 400, quality: 100) {
-              src
+              ...GatsbyContentfulFluid
             }
           }
         }
