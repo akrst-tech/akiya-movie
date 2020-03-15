@@ -29,7 +29,7 @@ const DesktopMenu = () => (
       <Link to="/">
         <li>Home</li>
       </Link>
-      <Link to="/">
+      <Link to="/contact">
         <li>Contact</li>
       </Link>
       <a

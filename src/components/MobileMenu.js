@@ -73,7 +73,7 @@ const MobileMenu = () => {
             <Link to="/">Home</Link>
           </MenuItem>
           <MenuItem onClick={toggleNav}>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </MenuItem>
           <MenuItem onClick={toggleNav}>
             <a
