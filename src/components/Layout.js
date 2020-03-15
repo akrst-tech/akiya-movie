@@ -6,8 +6,6 @@ import Footer from "./Footer"
 import TopSection from "./TopSection"
 import DesktopMenu from "./DesktopMenu"
 
-// import NavBar from "./NavBar"
-
 import "./layout.css"
 
 const Wrapper = styled.div`
@@ -57,15 +55,3 @@ const Layout = ({ location, children }) => {
 }
 
 export default Layout
-
-// <div>
-//   <TopSection />
-//   <MobileMenu />
-//   <Wrapper>
-//     <BottomSection>
-//       <DesktopMenu />
-//       <VideoSection>{children}</VideoSection>
-//     </BottomSection>
-//     <Footer />
-//   </Wrapper>
-// </div>
