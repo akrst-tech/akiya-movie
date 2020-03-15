@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
-import Header from "./Header"
+import MobileMenu from "./MobileMenu"
 import Footer from "./Footer"
 import TopSection from "../components/TopSection"
+import DesktopMenu from "../components/DesktopMenu"
 
 // import NavBar from "./NavBar"
 
@@ -53,32 +54,17 @@ const VideoSection = styled.div`
   }
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ location, children }) => {
+  const rootPath = `${__PATH_PREFIX__}/`
+  console.log(rootPath)
+
   return (
     <div>
       <TopSection />
-      <Header />
+      <MobileMenu />
       <Wrapper>
         <BottomSection>
-          <DesktopMenuSection>
-            <ul>
-              <Link to="/">
-                <li>Home</li>
-              </Link>
-              <Link to="/">
-                <li>Contact</li>
-              </Link>
-              <a href="https://www.instagram.com/akiya0104/" target="_blank">
-                <li>Instagram</li>
-              </a>
-              <a
-                href="https://www.youtube.com/channel/UCXeGg0Pv1hAkAUYrhyf0aVg"
-                target="_blank"
-              >
-                <li>YouTube</li>
-              </a>
-            </ul>
-          </DesktopMenuSection>
+          <DesktopMenu />
           <VideoSection>{children}</VideoSection>
         </BottomSection>
         <Footer />

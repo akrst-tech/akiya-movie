@@ -5,13 +5,11 @@ import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import VideoCards from "../components/VideoCards"
 
-const IndexPage = ({ data }) => (
-  <div>
-    <Layout>
-      <SEO title="Home" />
-      <VideoCards />
-    </Layout>
-  </div>
+const IndexPage = ({ data, location }) => (
+  <Layout location={location}>
+    <SEO title="Home" />
+    <VideoCards />
+  </Layout>
 )
 
 export const query = graphql`
