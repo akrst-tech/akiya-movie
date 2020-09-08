@@ -49,7 +49,7 @@ const Contact = ({ location }) => (
   <Layout location={location}>
     <FormWrapper className="form-wrapper">
       <form
-        action="https://formspree.io/suto1208@gmail.com"
+        action="https://formspree.io/tanakaakiya1998@gmail.com"
         method="POST"
         className="form"
       >

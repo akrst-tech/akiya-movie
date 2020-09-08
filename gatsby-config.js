@@ -1,12 +1,6 @@
-// const dotenv = require("dotenv")
-
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
-
-// if (process.env.NODE_ENV !== "production") {
-//   dotenv.config()
-// }
 
 module.exports = {
   siteMetadata: {
@@ -16,7 +10,7 @@ module.exports = {
       summary: `makes awesome videos.`,
     },
     description: `Akiya's portfolio website`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `http://akiyamovie.com`,
     social: {
       twitter: ``,
     },
@@ -80,3 +74,8 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+
+// const dotenv = require("dotenv")
+// if (process.env.NODE_ENV !== "production") {
+//   dotenv.config()
+// }
