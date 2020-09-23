@@ -21,7 +21,7 @@ const StyledDesktopMenu = styled.div`
     margin: 10px 0;
     list-style: none;
     font-size: 0.8rem;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     :hover {
       opacity: 60%;
     }

@@ -32,7 +32,7 @@ const VideoSection = styled.div`
 `
 
 const Layout = ({ location, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  // const rootPath = `${__PATH_PREFIX__}/`
 
   // let topSection
   // if (location.pathname === rootPath) {
