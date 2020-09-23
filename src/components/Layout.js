@@ -31,7 +31,7 @@ const VideoSection = styled.div`
   }
 `
 
-const Layout = ({ location, children }) => {
+const Layout = ({ children }) => {
   // const rootPath = `${__PATH_PREFIX__}/`
 
   // let topSection
