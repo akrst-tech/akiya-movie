@@ -3,7 +3,8 @@ import styled from "styled-components"
 
 import MobileMenu from "./MobileMenu"
 import Footer from "./Footer"
-import TopSection from "./TopSection"
+// import TopSection from "./TopSection"
+import Header from "./Header"
 import DesktopMenu from "./DesktopMenu"
 
 import "./layout.css"
@@ -32,16 +33,18 @@ const VideoSection = styled.div`
 
 const Layout = ({ location, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
-  let topSection
 
-  if (location.pathname === rootPath) {
-    topSection = <TopSection />
-  } else {
-    topSection = null
-  }
+  // let topSection
+  // if (location.pathname === rootPath) {
+  //   topSection = <TopSection />
+  // } else {
+  //   topSection = null
+  // }
+  // < div > { topSection }</>
+
   return (
     <div>
-      <div>{topSection}</div>
+      <Header />
       <MobileMenu />
       <Wrapper>
         <BottomSection>

@@ -9,8 +9,13 @@ const StyledDesktopMenu = styled.div`
     display: block;
     width: 20%;
   }
+  h2 {
+    margin: 0 0 30px 0;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+  }
   ul {
-    margin: 50px 0;
+    margin: 0;
   }
   li {
     margin: 10px 0;
@@ -25,6 +30,9 @@ const StyledDesktopMenu = styled.div`
 
 const DesktopMenu = () => (
   <StyledDesktopMenu>
+    <h2>
+      <Link to="/">AKIYA MOVIE</Link>
+    </h2>
     <ul>
       <Link to="/">
         <li>Home</li>

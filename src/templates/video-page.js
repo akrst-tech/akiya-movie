@@ -15,6 +15,9 @@ const Wrapper = styled.div`
     font-weight: 400;
     letter-spacing: 1px;
   }
+  @media screen and (min-width: 700px) {
+    margin: 0 0 50px 0;
+  }
 `
 
 const IframeContainer = styled.div`

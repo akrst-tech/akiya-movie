@@ -12,6 +12,7 @@ const VideoCardsContainer = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0 0 50px 0;
   }
 `
 
